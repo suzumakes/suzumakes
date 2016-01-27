@@ -1,0 +1,81 @@
+.accordion {
+
+    h2 {
+        float: left;
+        margin-top: 10px;
+    }
+
+    .fa {
+        font-size: 2em;
+        padding-top: 10px;
+    }
+}
+
+.ui-widget-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.ui-accordion {
+
+    .ui-accordion-header {
+        display: block;
+        cursor: pointer;
+        position: relative;
+        margin: 2px 0 0 0;
+        padding: .5em .5em .5em .7em;
+        min-height: 0; /* support: IE7 */
+        font-size: 100%;
+    }
+
+    .ui-accordion-icons {
+        padding-left: 2.2em;
+        color: $dark-blue;
+    }
+
+    .ui-accordion-header .ui-accordion-header-icon {
+        position: absolute;
+        left: .5em;
+        top: 50%;
+        margin-top: -8px;
+        margin-right: 10px;
+    }
+
+    .ui-accordion-content {
+        padding: 1em 2.2em;
+        border-top: 0;
+        overflow: auto;
+        background: #FFF;
+    }
+}
+
+.ui-corner-top,
+.ui-corner-bottom,
+.ui-corner-all {
+    border-radius: 0px;
+}
+
+.ui-state-default {
+    background: #FFF;
+    border: none;
+    border-top: 2px solid $light-grey;
+}
+
+#accordion:last-child {
+    border-bottom: 2px solid $light-grey;
+}
+
+.ui-widget-content {
+    border: none;
+}
+
+.ui-accordion .ui-accordion-header .ui-accordion-header-icon {
+    /*right: 0.75em !important;*/
+    left: 95%;
+    position: absolute;
+    right: 0.5em;
+    top: 1em;
+}

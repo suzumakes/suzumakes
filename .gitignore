@@ -1,0 +1,19 @@
+# obv
+.DS_Store
+
+# private
+/_private
+
+# LaTeX temp
+/LaTeX/.texpadtmp/*
+
+# interview_tests
+/InterviewTests/responsive-page/bower_components/*
+/InterviewTests/responsive-page/etc/*
+/InterviewTests/responsive-page/node_modules/*
+
+# !gitignore
+!/.gitignore
+
+# in-progress
+/Ruby/*

@@ -1,0 +1,23 @@
+{
+  "name": "responsive-page",
+  "description": "sample responsive page",
+  "main": "index.html",
+  "authors": [
+    "suzumakes"
+  ],
+  "license": "MIT",
+  "moduleType": [],
+  "homepage": "none",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6",
+    "jquery": "2.2.0",
+    "jquery-ui": "jquery.ui#~1.11.4"
+  }
+}

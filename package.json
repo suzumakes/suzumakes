@@ -1,0 +1,22 @@
+{
+  "name": "suzumakes",
+  "version": "1.0.0",
+  "description": "example",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suzumakes/suzumakes.git"
+  },
+  "keywords": [
+    "example"
+  ],
+  "author": "suzumakes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/suzumakes/suzumakes/issues"
+  },
+  "homepage": "https://github.com/suzumakes/suzumakes#readme"
+}
