@@ -11,6 +11,7 @@
 /InterviewTests/responsive-page/bower_components/*
 /InterviewTests/responsive-page/etc/*
 /InterviewTests/responsive-page/node_modules/*
+/InterviewTests/responsive-page/src/*
 
 # !gitignore
 !/.gitignore
