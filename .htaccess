@@ -1,0 +1,17 @@
+#Funk #Referrer #Spam
+
+RewriteEngine On
+Options +FollowSymlinks
+
+RewriteCond %{HTTP_REFERER} ^https?://([^.]+\.)*с.новым.годом\.рф\ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^https?://([^.]+\.)*top1-seo-service\.com\ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^https?://([^.]+\.)*happy.new.yeartwit\.com\ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^https?://([^.]+\.)*how.to.travel.and.make.money.with.maps.ilikevitaly\.com\ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^https?://([^.]+\.)*trafficgenius\.xyz\ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^https?://([^.]+\.)*traffic2cash\.xyz\ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^https?://([^.]+\.)*share-buttons\.xyz\ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^https?://([^.]+\.)*guardlink\.org\ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^https?://([^.]+\.)*get-your-social-buttons\.info\ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^https?://([^.]+\.)*adf\.ly\ [NC,OR]
+
+RewriteRule .* – [F]

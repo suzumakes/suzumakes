@@ -90,11 +90,6 @@ sudo mkdir /System/Library/LaunchAgentsDisabled
 sudo mv /System/Library/LaunchAgents/com.apple.gamed.plist /System/Library/LaunchAgentsDisabled/
 ```
 
-######Rename GameController
-```
-sudo mv /System/Library/Frameworks/GameController.framework/Versions/A/GameController /System/Library/Frameworks/GameController.framework/Versions/A/GameController.inactive
-```
-
 ######Delete Game Center
 
 FInder => Get Info => Add Sharing & Permissions Access => Add yourself
