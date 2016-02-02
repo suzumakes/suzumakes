@@ -13,7 +13,7 @@ module.exports = function(grunt) {
         bower_concat: {
             all: {
                 dest: 'src/js/_bower.js',    // JS
-                cssDest: 'src/scss/vendor/_bower.scss',    // CSS
+                cssDest: 'src/scss/_bower.scss',    // CSS
                 mainFiles: {
 
                     // required mainFiles entries
@@ -34,14 +34,28 @@ module.exports = function(grunt) {
                         'ui/core.js',
                         'ui/widget.js',
                         'ui/effect.js',
-                        'ui/accordion.js',
-                        'ui/foo.js',
                         'themes/base/theme.css',
-                    ]
+                    ],
+                    elastislide: [
+                        'js/modernizr.custom.17475.js',
+                        'js/jquery.elastislide.js',
+                        'js/jquerypp.custom.js',
+                        'css/elastislide.css',
+                    ],    // for 1.1.0
+                    'Slicebox': [
+                        'js/jquery.Slicebox.js',
+                        'css/Slicebox.css',
+                    ],    // for 1.1.0
+                    sharrre: [
+                        'jquery.sharrre.js',
+                    ],
                 },
                 exclude: [],
                 include: [],
-                dependencies: {},
+                dependencies: {
+                    'Elastislide': 'jquery',
+                    'Slicebox': 'jquery',
+                },
                 bowerOptions: {
                     relative: false
                 },
@@ -70,13 +84,19 @@ module.exports = function(grunt) {
                     preserveComments: 'all'
                 },
                 files: [{
-                    src: [ 'src/js/foo/*.js' ],
+                    src: [
+                        'src/js/*.js',
+                        'src/js/config/*.js',
+                    ],
                     dest: 'js/script.js'
                 }]
             },
             build: {
                 files: [{
-                    src: [ 'src/js/foo/*.js' ],
+                    src: [
+                        'src/js/*.js',
+                        'src/js/config/*.js',
+                    ],
                     dest: 'js/script.min.js'
                 }]
             },
@@ -125,7 +145,9 @@ module.exports = function(grunt) {
                 files: [{
                     expand: true,
                     cwd: 'src/img/',
-                    src: [ 'foo/*.{png,jpg}' ],
+                    src: [
+                        'foo/*.{png,jpg}',
+                    ],
                     dest: 'img/'
                 }],
             },
@@ -137,7 +159,9 @@ module.exports = function(grunt) {
                 files: [{
                     expand: true,
                     cwd: 'src/img/',
-                    src: [ 'foo/*.{png,jpg}' ],
+                    src: [
+                        'foo/*.{png,jpg}',
+                    ],
                     dest: 'img/'
                 }],
             },
@@ -146,7 +170,10 @@ module.exports = function(grunt) {
         // Grunt watch
         watch: {
             js: {
-                files: [ 'src/js/*.js' ],
+                files: [
+                    'src/js/*.js',
+                    'src/js/config/*.js',
+                ],
                 tasks: [ 'uglify:dev' ]
             },
             css: {
@@ -168,6 +195,7 @@ module.exports = function(grunt) {
     // grunt.loadNpmTasks('grunt-includes');
     // grunt.loadNpmTasks('grunt-newer');
     // grunt.loadNpmTasks('grunt-sass');
+    // grunt.loadNpmTasks('grunt-uncss');
     // grunt.loadNpmTasks('grunt-contrib-clean');
 
     // Register tasks

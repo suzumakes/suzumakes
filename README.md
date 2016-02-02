@@ -104,12 +104,11 @@ In Recovery Mode:
 csrutil disable
 ```
 
-######Restore Admin (Mac)
-[This article](http://www.macworld.com/article/2868032/what-to-do-if-your-mac-refuses-to-accept-your-password.html)
+<h6>[Restore Admin (Mac)](http://www.macworld.com/article/2868032/what-to-do-if-your-mac-refuses-to-accept-your-password.html)</h6>
 
 ###Web Dev
 
-######Bootstrap Media Sizes
+######Bootstrap 3.3.6 Media Sizes
 ```
 @media (max-width: 767px) {
     // xs
@@ -122,7 +121,7 @@ csrutil disable
 }
 ```
 
-######Foundation Media Sizes
+######Foundation 6 Media Sizes
 ```
 @media (max-width: 640px) {
     // small
@@ -166,15 +165,15 @@ _Elements are changed to remove references to companies._
 ######Requirements
 
 1. Page has to be responsive - x-small and large screens provided
-2. Using a Grid System or CSS Framework is encouraged
-3. Page needs to be cross-browser compatible. Chrome, Firefox, Safari, and IE
-4. The font is Open Sans
-5. Form does not have to function, but the form must be styled with valid elements
+2. Grid System or CSS Framework encouraged
+3. Cross-browser compatible for Chrome, Firefox, Safari, and IE
+4. Font = Open Sans
+5. Form mockup styled with valid elements
 6. Accordion for "Sign-up To View" section. Chevron changes direction when accordion elements are toggled.
 
 ######Changes From Submission
 
 1. Grunt-Includes used for better organization
-2. Media queries for x-small, small, medium, and large screens included
+2. x-small, small, medium, and large media queries included
 3. SCSS is split into separate files, variables and mixins imported from my own snippets
 4. No dropdown in the original submission.

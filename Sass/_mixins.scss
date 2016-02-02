@@ -1,0 +1,37 @@
+// Fonts
+
+@font-face {
+    font-family: 'font';
+    src:  url('../fonts/folder/font-namewoff2') format('woff2'),
+    url('../fonts/folder/font-namewoff2') format('woff');
+}
+
+@mixin font($weight) {
+    font-family: 'font', serif;
+    font-weight: $weight;
+    font-style: normal;
+}
+
+// Box Shadow
+@mixin box-shadow($x, $y, $blur, $color) {
+    box-shadow: $x $y $blur $color;
+}
+
+@mixin inset-box-shadow($x, $y, $blur, $color) {
+    box-shadow: inset $x $y $blur $color;
+}
+
+// Borders
+@mixin border-radius($top-left, $top-right, $bottom-right, $bottom-left) {
+    border-radius: $top-left $top-right $bottom-right $bottom-left;
+}
+
+// Backgrounds
+@mixin background-size($type) {
+    background-size: ($type);
+}
+
+// Transitions
+@mixin transition($name, $duration, $function) {
+    transition: $name $duration $function;
+}
