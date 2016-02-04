@@ -12,26 +12,26 @@
     font-style: normal;
 }
 
-// Box Shadow
-@mixin box-shadow($x, $y, $blur, $color) {
-    box-shadow: $x $y $blur $color;
-}
+// Box Shadow -- Prefixes no longer needed
+// @mixin box-shadow($x, $y, $blur, $color) {
+//     box-shadow: $x $y $blur $color;
+// }
 
-@mixin inset-box-shadow($x, $y, $blur, $color) {
-    box-shadow: inset $x $y $blur $color;
-}
+// @mixin inset-box-shadow($x, $y, $blur, $color) {
+//     box-shadow: inset $x $y $blur $color;
+// }
 
-// Borders
-@mixin border-radius($top-left, $top-right, $bottom-right, $bottom-left) {
-    border-radius: $top-left $top-right $bottom-right $bottom-left;
-}
+// Borders -- Prefixes no longer needed
+// @mixin border-radius($top-left, $top-right, $bottom-right, $bottom-left) {
+//     border-radius: $top-left $top-right $bottom-right $bottom-left;
+// }
 
-// Backgrounds
-@mixin background-size($type) {
-    background-size: ($type);
-}
+// Backgrounds -- Prefixes no longer needed
+// @mixin background-size($type) {
+//     background-size: ($type);
+// }x
 
-// Transitions
-@mixin transition($name, $duration, $function) {
-    transition: $name $duration $function;
-}
+// Transitions -- Prefixes no longer needed
+// @mixin transition($name, $duration, $function) {
+//     transition: $name $duration $function;
+// }

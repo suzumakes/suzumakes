@@ -103,6 +103,10 @@ In Recovery Mode:
 ```
 csrutil disable
 ```
+Give yourself ownership
+```
+sudo chown -R $user /usr/local
+```
 
 <h6>[Restore Admin (Mac)](http://www.macworld.com/article/2868032/what-to-do-if-your-mac-refuses-to-accept-your-password.html)</h6>
 
