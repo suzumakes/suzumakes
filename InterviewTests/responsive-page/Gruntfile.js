@@ -1,4 +1,5 @@
 module.exports = function(grunt) {
+    require('jit-grunt')(grunt);
 
     // Configure tasks
     grunt.initConfig({
@@ -128,17 +129,6 @@ module.exports = function(grunt) {
         },
 
     });
-
-    // Load the plugins
-    require('load-grunt-tasks')(grunt);
-    // grunt.loadNpmTasks('grunt-bower-concat');
-    // grunt.loadNpmTasks('grunt-contrib-copy');
-    // grunt.loadNpmTasks('grunt-contrib-cssmin');
-    // grunt.loadNpmTasks('grunt-contrib-uglify');
-    // grunt.loadNpmTasks('grunt-contrib-watch');
-    // grunt.loadNpmTasks('grunt-includes');
-    // grunt.loadNpmTasks('grunt-sass');
-    // grunt.loadNpmTasks('grunt-contrib-clean');
 
     // Register tasks
     grunt.registerTask('default', [

@@ -140,7 +140,7 @@ sudo chown -R $user /usr/local
 
 ######Internet Explorer Media
 ```
-@meda all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     IE 10+
 }
 

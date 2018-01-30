@@ -18,5 +18,19 @@
   "bugs": {
     "url": "https://github.com/suzumakes/suzumakes/issues"
   },
-  "homepage": "https://github.com/suzumakes/suzumakes#readme"
+  "homepage": "https://github.com/suzumakes/suzumakes#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-bower-concat": "^1.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^1.0.1",
+    "grunt-contrib-imagemin": "^1.0.0",
+    "grunt-contrib-uglify": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-includes": "^0.5.4",
+    "grunt-newer": "^1.1.2",
+    "grunt-prettify": "^0.4.0",
+    "grunt-sass": "^1.1.0",
+    "jit-grunt": "^0.10.0"
+  }
 }

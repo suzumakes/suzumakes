@@ -7,14 +7,16 @@
 # LaTeX temp
 /LaTeX/.texpadtmp/*
 
-# interview_tests
-/InterviewTests/responsive-page/bower_components/*
-/InterviewTests/responsive-page/etc/*
+# Grunt
+/node_modules/*
 /InterviewTests/responsive-page/node_modules/*
-/InterviewTests/responsive-page/src/*
 
-# !gitignore
-!/.gitignore
+# Bower
+/bower_components/*
+/InterviewTests/responsive-page/bower_components/*
+
+# src
+/InterviewTests/responsive-page/src/*
 
 # in-progress
 /Ruby/*
