@@ -1,18 +1,18 @@
-###Snippets/Scripts
+### Snippets/Scripts
 
-######Find and Replace strings recursively
+###### Find and Replace strings recursively
 ```
 find . -type f -exec sed -i '' -e 's/old-string/new-string/g' {} +
 
 LC_CTYPE=C find . -type f -exec sed -i '' -e 's/old-string/new-string/g' {} +
 ```
 
-######Multiple Git Pulls
+###### Multiple Git Pulls
 ```
 find . -type d -depth 1 -exec git --git-dir={}/.git --work-tree=$PWD/{} pull origin master \;
 ```
 
-######Switch Git Protocol
+###### Switch Git Protocol
 ```
 git config --global url."https://".insteadOf git://
 ```
@@ -22,7 +22,7 @@ Switch back => Users/YourUser/.gitconfig => delete
     insteadOf = git://
 ```
 
-######Errors
+###### Errors
 
 Cannot find module '/usr/local/lib/node_modules/npm/lib/build.js'
 ```
@@ -39,7 +39,7 @@ Clear local settings
 localStorage.clear()
 ```
 
-######NPM JS-Beautify
+###### NPM JS-Beautify
 
 File
 ```
@@ -56,9 +56,9 @@ find . -type f -name "*.js" -exec js-beautify -r {} \;
 find . -type f -name "*.html" -exec js-beautify -r {} \; && find . -type f -name "*.css" -exec js-beautify -r {} \; && find . -type f -name "*.js" -exec js-beautify -r {} \;
 ```
 
-###Mac Config
+### Mac Config
 
-######Add mysql to LaunchAgents (homebrew)
+###### Add mysql to LaunchAgents (homebrew)
 ```
 ln -sfv /usr/local/opt/mysql/*.plist ~/Library/LaunchAgents
 ```
@@ -71,13 +71,13 @@ Start mysql server
 mysql.server start
 ```
 
-######ASPNET Compiler
+###### ASPNET Compiler
 ```
 brew unlink czmq
 brew link mono
 ```
 
-######Remove or Move gamed from LaunchAgents
+###### Remove or Move gamed from LaunchAgents
 
 Remove
 ```
@@ -90,14 +90,14 @@ sudo mkdir /System/Library/LaunchAgentsDisabled
 sudo mv /System/Library/LaunchAgents/com.apple.gamed.plist /System/Library/LaunchAgentsDisabled/
 ```
 
-######Delete Game Center
+###### Delete Game Center
 
 FInder => Get Info => Add Sharing & Permissions Access => Add yourself
 ```
 sudo rm rf /Applications/Game\ Center.app
 ```
 
-######Disable SIP
+###### Disable SIP
 
 In Recovery Mode:
 ```
@@ -110,9 +110,9 @@ sudo chown -R $user /usr/local
 
 <h6>[Restore Admin (Mac)](http://www.macworld.com/article/2868032/what-to-do-if-your-mac-refuses-to-accept-your-password.html)</h6>
 
-###Web Dev
+### Web Stuff
 
-######Bootstrap 3.3.6 Media Sizes
+###### Bootstrap 3.3.6 Media Sizes
 ```
 @media (max-width: 767px) {
     // xs
@@ -125,7 +125,7 @@ sudo chown -R $user /usr/local
 }
 ```
 
-######Foundation 6 Media Sizes
+###### Foundation 6 Media Sizes
 ```
 @media (max-width: 640px) {
     // small
@@ -138,7 +138,7 @@ sudo chown -R $user /usr/local
 }
 ```
 
-######Internet Explorer Media
+###### Internet Explorer Media
 ```
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     IE 10+
@@ -149,35 +149,15 @@ input[type="foo"]:-ms-input-placeholder {
 }
 ```
 
-######Safari Media
+###### Safari Media
 ```
 @suports (overflow:-webkit-marquee) and (justify-content: inherit) {
     Safari
 }
 ```
 
-###InterviewTests
+### InterviewTests
 
 These are the pages/apps I've been asked to make for interviews.
 
 _Elements are changed to remove references to companies._
-
-###responsive-page
-
-[Demo](https://suzumakes.github.io/suzumakes/)
-
-######Requirements
-
-1. Page has to be responsive - x-small and large screens provided
-2. Grid System or CSS Framework encouraged
-3. Cross-browser compatible for Chrome, Firefox, Safari, and IE
-4. Font = Open Sans
-5. Form mockup styled with valid elements
-6. Accordion for "Sign-up To View" section. Chevron changes direction when accordion elements are toggled.
-
-######Changes From Submission
-
-1. Grunt-Includes used for better organization
-2. x-small, small, medium, and large media queries included
-3. SCSS is split into separate files, variables and mixins imported from my own snippets
-4. No dropdown in the original submission.
